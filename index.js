@@ -4,9 +4,10 @@ const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
 
 yesBtn.addEventListener("click", () => {
+    console.log("I entered the yes button click event");
     step1.classList.add("hidden");
     step2.classList.remove("hidden");
-    console.log("yes button clicked");
+    console.log("I finished the yes button click event");
 });
 
 function moveNo() {
