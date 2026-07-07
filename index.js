@@ -4,8 +4,7 @@ const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
 
 yesBtn.addEventListener("click", () => {
-    step1.classList.add("hidden");
-    step2.classList.remove("hidden");
+   console.log("yes button clicked");
 });
 
 function moveNo() {
