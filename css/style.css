@@ -80,7 +80,7 @@ h1 {
 }
 
 .no {
-    position: absolute;
+    position: relative;
     left: 60%;
     top: 0;
     background: rgba(255, 255, 255, 0.2);
