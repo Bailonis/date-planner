@@ -80,8 +80,9 @@ h1 {
 }
 
 .no {
-    position: fixed;   
-    z-index: 999;
+    position: absolute;
+    left: 60%;
+    top: 0;
     background: rgba(255, 255, 255, 0.2);
     color: white;
 }
