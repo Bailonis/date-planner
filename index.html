@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Date Invitation ❤️</title>
+
+    ">
+
+    https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- STEP 1 -->
+
+        <div id="step1" class="card">
+
+            <h1>Would you like to go on a date with me? ❤️</h1>
+
+            <p class="subtitle">
+                I promise good food, great company and at least one terrible joke.
+            </p>
+
+            /snoopy-love.gif"
+                class="gif"
+                alt="Snoopy">
+
+            <div class="buttons">
+
+                <button id="yesBtn" class="btn yes">
+                    YES ❤️
+                </button>
+
+                <button id="noBtn" class="btn no">
+                    NO 🙈
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- FOOD -->
+
+        <div id="step2" class="card hidden">
+
+            <h1>Choose Food 🍕</h1>
+
+            <div id="foodGrid" class="grid">
+
+                <div class="option">
+                    urger.jpg">
+                    <h3>Burger</h3>
+                </div>
+
+                <div class="option">
+                    images/pizza.jpg
+                    <h3>Pizza</h3>
+                </div>
+
+                <div class="option">
+                    images/sushi.jpg
+                    <h3>Sushi</h3>
+                </div>
+
+                <div class="option">
+                    images/icecream.jpg
+                    <h3>Ice Cream</h3>
+                </div>
+
+                <div class="option">
+                    images/brunch.jpg
+                    <h3>Brunch</h3>
+                </div>
+
+                <div class="option">
+                    ">
+                    <h3>Pasta</h3>
+                </div>
+
+            </div>
+
+            <button class="nextBtn" onclick="goActivities()">
+                Continue
+            </button>
+
+        </div>
+
+        <!-- ACTIVITIES -->
+
+        <div id="step3" class="card hidden">
+
+            <h1>Choose Activities 🎬</h1>
+
+            <div id="activityGrid" class="grid">
+
+                <div class="option">
+                    images/cinema.jpg
+                    <h3>Cinema</h3>
+                </div>
+
+                <div class="option">
+                    images/picnic.jpg
+                    <h3>Picnic</h3>
+                </div>
+
+                <div class="option">
+                    images/museum.jpg">
+                    <h3>Museum</h3>
+                </div>
+
+                <div class="option">
+                    images/bowling.jpg">
+                    <h3>Bowling</h3>
+                </div>
+
+                <div class="option">
+                    images/minigolf.jpg
+                    <h3>Mini Golf</h3>
+                </div>
+
+                <div class="option">
+                    images/walk.jpg
+                    <h3>Walk</h3>
+                </div>
+
+                 <div class="option">
+                    images/beach.jpg
+                    <h3>Beach</h3>
+                </div>
+
+            </div>
+
+            <button class="nextBtn" onclick="goDate()">
+                Continue
+            </button>
+
+        </div>
+
+        <!-- DATE -->
+
+        <div id="step4" class="card hidden">
+
+            <h1>Choose a Date 📅</h1>
+
+            <div class="date-box">
+                <input type="date" id="dateInput">
+            </div>
+
+            <button class="nextBtn" onclick="showSummary()">
+                Continue
+            </button>
+
+        </div>
+
+        <!-- SUMMARY -->
+
+        <div id="step5" class="card hidden">
+
+            <h1>Our Date ❤️</h1>
+
+            <div id="summary" class="summary"></div>
+
+            <button class="nextBtn" onclick="finishDate()">
+                Confirm Date
+            </button>
+
+        </div>
+
+        <!-- FINAL -->
+
+        <div id="step6" class="card hidden final">
+
+            images/snoopy-happy.gif
+
+            <h1>It's a Date! 🎉</h1>
+
+            <p>
+                Can't wait to see you ❤️
+            </p>
+
+        </div>
+
+    </div>
+
+    js/app.js
+
+</body>
+
+</html>
