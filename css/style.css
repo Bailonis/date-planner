@@ -85,7 +85,11 @@ h1 {
     background: rgba(255, 255, 255, 0.2);
     color: white;
 }
-
+@media (max-width: 574px) {
+        .no {        
+            top: -190px;
+            }
+        }
 .grid {
     display: grid;
     gap: 16px;

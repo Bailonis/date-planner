@@ -1,5 +1,11 @@
 let scale = 1;
 
+let datePlan = {    
+    foods: "",    
+    activities: "",    
+    date: ""
+};
+
 const yesBtn = document.getElementById("yesBtn");
 const noBtn = document.getElementById("noBtn");
 
@@ -71,19 +77,23 @@ function showSummary() {
     const date =
         document.getElementById("dateInput").value;
 
+    datePlan.foods = foods || "Surprise";
+    datePlan.activities = activities || "Surprise";
+    datePlan.date = date || "To be decided";
+
     document.getElementById("summary").innerHTML = `
         <h3>🍕 Food</h3>
-        <p>${foods || "Surprise"}</p>
+        <p>${datePlan.foods}</p>
 
         <br>
 
         <h3>🎬 Activities</h3>
-        <p>${activities || "Surprise"}</p>
+        <p>${datePlan.activities}</p>
 
         <br>
 
         <h3>📅 Date</h3>
-        <p>${date || "To be decided"}</p>
+        <p>${datePlan.date}</p>
     `;
 
     step4.classList.add("hidden");
@@ -94,6 +104,8 @@ function finishDate() {
 
     step5.classList.add("hidden");
     step6.classList.remove("hidden");
+
+    sendNotification();
 
     startHearts();
 }
@@ -132,4 +144,33 @@ function startHearts() {
 
     }, 300);
 
+}
+
+function sendNotification() {
+
+    const formspreeEndpoint = "https://formspree.io/f/mqevopvo";
+
+    fetch(formspreeEndpoint, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+            "Accept": "application/json"
+        },
+        body: JSON.stringify({
+            message: "New date plan submitted ❤️",
+            foods: datePlan.foods,
+            activities: datePlan.activities,
+            date: datePlan.date
+        })
+    })
+    .then(response => {
+        if (response.ok) {
+            console.log("Notification sent successfully!");
+        } else {
+            console.error("Notification failed.");
+        }
+    })
+    .catch(error => {
+        console.error("Error sending notification:", error);
+    });
 }
