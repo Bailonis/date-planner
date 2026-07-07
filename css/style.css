@@ -41,7 +41,7 @@ h1 {
 }
 
 .btn {
-    position: static;
+    position: flex;
     min-width: 230px;
     padding: 28px 60px;
     border: none;
