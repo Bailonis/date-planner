@@ -11,6 +11,8 @@ yesBtn.addEventListener("click", () => {
 });
 
 function moveNo() {
+    console.log(noBtn.style.left);
+    console.log(noBtn.style.top);
 
     const x =
         Math.random() * (window.innerWidth - 180);
