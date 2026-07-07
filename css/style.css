@@ -81,8 +81,8 @@ h1 {
 
 .no {
     position: relative;
-    left: 60%;
-    top: 0;
+    left: 120px;
+    top: 1px;
     background: rgba(255, 255, 255, 0.2);
     color: white;
 }
