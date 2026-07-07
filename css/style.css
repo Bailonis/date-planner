@@ -4,6 +4,30 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #ff82b2, #ff4f91);
+    min-height: 100vh;
+    color: white;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px 20px;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 30px;
+    padding: 30px;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
 .hidden {
     display: none;
 }
@@ -56,9 +80,6 @@ h1 {
 }
 
 .no {
-    position: absolute;
-    left: 60%;
-    top: 0;
     background: rgba(255, 255, 255, 0.2);
     color: white;
 }
@@ -190,25 +211,4 @@ input[type="date"] {
     .grid {
         grid-template-columns: repeat(2, 1fr);
     }
-}
-
-body {
-    font-family: "Poppins", sans-serif;
-    background: linear-gradient(135deg, #ff82b2, #ff4f91);
-    min-height: 100vh;
-    color: white;
-    overflow-x: hidden;
-}
-
-.container {
-    max-width: 1000px;
-    margin: auto;
-    padding: 30px 20px;
-}
-
-.card {
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
 }
